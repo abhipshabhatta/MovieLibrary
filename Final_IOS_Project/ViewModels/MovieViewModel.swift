@@ -28,7 +28,7 @@ class MovieViewModel: ObservableObject {
 
     // fetch movies from API
     func fetchMoviesFromAPI() {
-        let apiKey = "8b4e9bbc890441087b185ea624b1648f"
+        let apiKey = "api_key"
         let urlString = "https://api.themoviedb.org/3/movie/popular?api_key=\(apiKey)&language=en-US&page=1"
 
         guard let url = URL(string: urlString) else {
